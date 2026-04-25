@@ -33,22 +33,56 @@
 
 
 
+// import java.util.Scanner;
+
+// public class SDT{
+    
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int t = sc.nextInt();
+//         while(t>0){
+//             int ini = sc.nextInt();
+//             int fin = sc.nextInt();
+//             for(int i = ini; i<=fin; i++){
+//                 if(i % 2 != 0){
+//                     System.out.println(i);
+//                 }
+//             }
+//         }
+//         sc.close();
+//     }
+// }
+
+
+
+
+
+
+
+//  sum of the digit
 import java.util.Scanner;
 
 public class SDT{
-    
-    public static void main(String[] args) {
+
+    public static int addNum(int num){
+        int temp = num;
+        int add = 0;
+        while(temp > 0){
+            int rem = temp % 10;
+            add += rem;
+            temp /= 10;
+        }
+        return add;
+    }
+
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while(t>0){
-            int ini = sc.nextInt();
-            int fin = sc.nextInt();
-            for(int i = ini; i<=fin; i++){
-                if(i % 2 != 0){
-                    System.out.println(i);
-                }
-            }
+            int num = sc.nextInt();
+            System.out.println(addNum(num));
         }
         sc.close();
     }
 }
+
