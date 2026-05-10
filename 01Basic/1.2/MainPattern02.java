@@ -97,3 +97,64 @@ import java.util.Scanner;
 
 
 
+//       5
+//               *
+//             * * *
+//           * * * * *
+//         * * * * * * *
+//       * * * * * * * * *
+// public class MainPattern02 {
+//     public static void pattern(int n){
+//         int st = 1;
+//         for(int i=1;i<=n;i++){ // row
+//             int sp = n-i;
+//             for(int j=1;j<=sp;j++){ // For Space
+//                 System.out.print("  ");
+//             }
+//             for(int k=1;k<=st;k++){ // For Star
+//                 System.out.print(" *");
+//             }
+//             st+=2;
+//             System.out.println();
+//         }
+        
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter no of rows : ");
+//         int n = sc.nextInt();
+//         pattern(n);
+//         sc.close();
+//     }
+// }
+
+
+
+
+public class MainPattern02 {
+    public static void pattern(int n){
+        int st = 1;
+        for(int i=1;i<=n;i++){ // row
+            int sp = n-i;
+            for(int j=1;j<=sp;j++){ // For Space
+                System.out.print("  ");
+            }
+            for(int k=1;k<=st;k++){ // For Star
+                System.out.print(" *");
+            }
+            st+=2;
+            System.out.println();
+        }
+        
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no of rows : ");
+        int n = sc.nextInt();
+        pattern(n);
+        sc.close();
+    }
+}
+
+
+
