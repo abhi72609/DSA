@@ -13,7 +13,7 @@
 // }
 
 
-public class Main01 {
+public class Main01Space {
     // TC - O(N²) || // TC - O(N² / 2)
     public static void main(String[] args) {
         int n = 6;
