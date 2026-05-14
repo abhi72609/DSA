@@ -320,7 +320,7 @@ public class MainPattern02 {
         System.out.print("Enter no of rows: ");
         int n = sc.nextInt();
         pattern(n);
-        sc.close();
+        
     }
 
 }
