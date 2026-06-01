@@ -57,26 +57,56 @@
 //     }
 // }
 
-method Overriding
-class Delta{
-    void test(){
-        System.out.println("Normal Test");
+// method Overriding
+// class Delta{
+//     void test(){
+//         System.out.println("Normal Test");
+//     }
+// }
+// class Beta extends Delta{
+//     @Override
+//     void test(){
+//         System.out.println("written Test");
+//     }
+// }
+
+// public class Mainclass1{
+//     public static void main(String[] args) {
+//         Delta d = new Beta();
+//         d.test();
+
+//     }
+// }
+
+
+//  CUSTOM EXCEPTION
+class MyCustomException extends Exception
+{
+    MyCustomException(){
+
+    }
+    MyCustomException(String arg){
+        super("msg");
     }
 }
-class Beta extends Delta{
-    @Override
-    void test(){
-        System.out.println("written Test");
+
+class Triggers
+{
+    static void logic (int num) throws MyCustomException{
+        if(num % 5 == 0)
+        {
+            throw new MyCustomException("/ By Five");
+        }
     }
 }
 
 public class Mainclass1{
-    public static void main(String[] args) {
-        Delta d = new Beta();
-        d.test();
-
+    public static void main(String[] args){
+        try{
+            Triggers.logic(10);
+        }
+        catch(MyCustomException e){
+            e.printStackTrace();
+        }
     }
 }
-
-
-
