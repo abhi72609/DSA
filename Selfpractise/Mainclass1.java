@@ -57,53 +57,26 @@
 //     }
 // }
 
-// method Overriding
-// class Delta{
-//     void test(){
-//         System.out.println("Normal Test");
-//     }
-// }
-// class Beta extends Delta{
-//     @Override
-//     void test(){
-//         System.out.println("written Test");
-//     }
-// }
-
-// public class Mainclass1{
-//     public static void main(String[] args) {
-//         Delta d = new Beta();
-//         d.test();
-
-//     }
-// }
-
-
-
-
-
+method Overriding
 class Delta{
-    void test(int t){
-        System.out.println(t+t);
+    void test(){
+        System.out.println("Normal Test");
     }
-    void test(double t){
-        System.out.println(t+t);
-    }
-    void test(int t,int d){
-        System.out.println(t+d);
-    }
-    void test(int t, double d){
-        System.out.println(t+d);
+}
+class Beta extends Delta{
+    @Override
+    void test(){
+        System.out.println("written Test");
     }
 }
 
 public class Mainclass1{
     public static void main(String[] args) {
-        Delta d = new Delta();
-        d.test(1);
-        d.test(1.2);
-        d.test(1,3);
-        d.test(1,2.0);
+        Delta d = new Beta();
+        d.test();
+
     }
 }
+
+
 
