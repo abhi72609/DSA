@@ -80,33 +80,67 @@
 
 
 //  CUSTOM EXCEPTION
-class MyCustomException extends Exception
-{
-    MyCustomException(){
+// class MyCustomException extends Exception
+// {
+//     MyCustomException(){
 
-    }
-    MyCustomException(String arg){
-        super("msg");
-    }
-}
+//     }
+//     MyCustomException(String arg){
+//         super("msg");
+//     }
+// }
 
-class Triggers
-{
-    static void logic (int num) throws MyCustomException{
-        if(num % 5 == 0)
-        {
-            throw new MyCustomException("/ By Five");
-        }
-    }
-}
+// class Triggers
+// {
+//     static void logic (int num) throws MyCustomException{
+//         if(num % 5 == 0)
+//         {
+//             throw new MyCustomException("/ By Five");
+//         }
+//     }
+// }
 
-public class Mainclass1{
-    public static void main(String[] args){
-        try{
-            Triggers.logic(10);
-        }
-        catch(MyCustomException e){
-            e.printStackTrace();
-        }
-    }
-}
+// public class Mainclass1{
+//     public static void main(String[] args){
+//         try{
+//             Triggers.logic(10);
+//         }
+//         catch(MyCustomException e){
+//             e.printStackTrace();
+//         }
+//     }
+// }
+
+
+
+
+// Boxing
+// import java.lang.reflect.Type;
+
+// public class Mainclass1 {
+//     public static void main(String[] args) {
+//         int a = 10;
+//         Integer ref = new Integer(a);
+//         System.out.println(ref);
+
+//         double d = 4.5;
+//         double obj = new Double(d);
+//         System.out.println(obj);
+//     }
+// }
+
+
+// import java.lang.reflect.Type;
+
+// public class Mainclass1 {
+//     public static void main(String[] args) {
+//         Integer ref = 45;
+//         int r = ref;
+//         System.out.println(r);
+
+//         double obj = 4.5;
+//         Double d = obj;
+//         System.out.println(d);
+//     }
+// }
+
