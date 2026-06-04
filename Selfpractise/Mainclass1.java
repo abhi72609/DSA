@@ -144,3 +144,75 @@
 //     }
 // }
 
+// Extending the thread class
+// class ThreadDemo extends Thread{
+//     @Override
+//     public void run(){
+//         for(int i=0; i<=4; i++){
+//             System.out.println("Demo Thread...");
+//         }
+//     }
+// }
+
+// public class Mainclass1 {
+//     public static void main(String[] args) {
+//         System.out.println("Start Execution");
+//         ThreadDemo td = new ThreadDemo();
+//         td.start();
+//         // td.run();
+//         System.out.println("End Execution");
+//     }
+// }
+
+
+// By implementing the runnable interface
+// class SampleThread implements Runnable{
+//     @Override
+//     public void run(){
+//         for(int i=0; i<=4; i++){
+//             System.out.println("Demo Thread...");
+//         }
+//     }
+// }
+
+// public class Mainclass1 {
+//     public static void main(String[] args) {
+//         System.out.println("Start Execution");
+//         SampleThread st = new SampleThread();
+//         Thread th = new Thread(st);
+//         th.start();
+//         System.out.println("End Execution");
+//         System.out.println("Id : "+th.getId() + " " +
+//                             "Name : "+th.getName() + " " +
+//                             "Priority: "+th.getPriority());
+//     }
+// }
+
+
+// toString without override
+// class Student2{
+//     String name = "Abhi";
+// }
+
+// public class Mainclass1{
+//     public static void main(String[] args) {
+//         Student2 s =  new Student2();
+//         System.out.println(s);
+//     }
+// }
+
+// toString with override
+// class Student2{
+//     String name = "Abhi";
+//     @Override
+//     public String toString(){
+//         return name;
+//     }
+// }
+
+// public class Mainclass1{
+//     public static void main(String[] args) {
+//         Student2 s =  new Student2();
+//         System.out.println(s);
+//     }
+// }
