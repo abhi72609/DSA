@@ -1,4 +1,4 @@
-virat_k = [39,40,0,67,100]
+virat_k = [39,40,0,65,100]
 # Runs in last match
 print(virat_k [len(virat_k)-1])
 
@@ -48,3 +48,16 @@ sum = 0
 for i in range(len(virat_k)):
     sum += virat_k[i]
 print("Sum of Virat Score is  :",sum)
+
+avg = (sum/len(virat_k))
+print(avg)
+
+avgRouundOff = round(sum/len(virat_k),2)
+print(avgRouundOff)
+
+EvenIndexSum = 0
+for i in range(len(virat_k)):
+    if i % 2 == 0:
+        EvenIndexSum += virat_k[i]
+
+print(EvenIndexSum)
