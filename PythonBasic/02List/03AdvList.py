@@ -21,11 +21,11 @@ for i in random:
 ##enter the no of elements in the list
 num_elements = int(input("Enter the no of elements"))
 
-# my_list = []
-# for i in range(num_elements):
-#     elements = input()
-#     my_list.append(elements)
-# print(my_list)
+my_list = []
+for i in range(num_elements):
+    elements = input()
+    my_list.append(elements)
+print(my_list)
 
 
 
@@ -50,3 +50,21 @@ print(SumOfAll)
 
 
 #Calculate the sum of elements in each row.
+A = [[1,2,3],
+     [4,5,6],
+     [7,8,9]]
+
+B = [[9,8,7],
+     [6,5,4],
+     [3,2,1]]
+
+rows = len(A)
+cols = len(A[0])
+
+C = []
+for i in range(rows):
+    C.append([])
+    for j in range(cols):
+        C[i].append(A[i][j]+B[i][j])
+
+print(C)
