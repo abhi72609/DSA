@@ -60,3 +60,33 @@ print(s2 - s1)
 print(s1.symmetric_difference(s2))
 #       OR
 print(s1 ^ s2)
+
+
+
+
+# "0011010101ab"
+# "0100101010109"
+# "010010101010"
+
+#     1st Apporach
+def check_binary(a):
+    for i in a:
+        if not (i == "0" or i=="1"):
+            return "not binary"
+    return "binary"
+print(check_binary("0100101010109"))
+
+
+
+def set1 (a):
+    return set(a)
+print(set1("11111111111111111111k1110000000000000000000000000011111111111111"))
+
+#     2nd Apporach
+def check_binary(a):
+    s = set(a)
+    if s == {"0","1"}:
+        return "binary"
+    else:
+        return "not binary"
+print(check_binary("0100101010101"))
