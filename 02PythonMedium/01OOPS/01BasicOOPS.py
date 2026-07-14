@@ -33,11 +33,14 @@ print(s2.name)
 #     def hello():
 #         print("Hello Students!")
 # s3 = Student()
-# print(s3.hello())
-
+# s3.hello()
+# Student.hello(s3)
 
 class Student:
     def hello(self):
         print("Hello Students!")
+        # id is basically a location 
+        print(id(self))
 s3 = Student()
 s3.hello()
+print(id(s3))
