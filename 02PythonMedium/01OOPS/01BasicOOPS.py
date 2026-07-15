@@ -34,7 +34,7 @@ print(s2.name)
 #         print("Hello Students!")
 # s3 = Student()
 # s3.hello()
-# Student.hello(s3)
+# # Student.hello(s3)
 
 class Student:
     def hello(self):
@@ -44,3 +44,8 @@ class Student:
 s3 = Student()
 s3.hello()
 print(id(s3))
+
+s4 = Student()
+s4.hello()
+print("Id of s4 :",id(s4))
+

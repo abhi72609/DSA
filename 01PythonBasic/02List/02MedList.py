@@ -1,7 +1,7 @@
 runs = [62,34,67,89,26,80,145,67,90]
-print(runs[:])
+# print(runs[:])
 # All value from 0 index to before 5th
-print(runs[0:5])
+# print(runs[0:5])
 
 # All value from -5 index (negative indexing)
 print(runs[-5:])
