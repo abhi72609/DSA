@@ -8,7 +8,7 @@ c2 = Car("Venue", 15)
 print(c1)
 # output - <__main__.Car object at 0x0000020407D3C6E0>
 
-#changing the default behaviour of print () function
+#changing the default behaviour of print () function using dunder
 class Car:
     def __init__(self, name, mileage):
         self.name = name
@@ -28,4 +28,4 @@ c1 = Car("Nexon", 12)
 c2 = Car("Venue", 15)
 print(c1)
 print(c1 + c2)
-print(c1<c2)
+print(c1 < c2)
