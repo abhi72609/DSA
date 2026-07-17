@@ -37,3 +37,50 @@ students = [
 print(sorted(students, key= lambda x: x["name"]))
 print(sorted(students, key= lambda x: x["marks"]))
 print(sorted(students, key= lambda x: x["marks"], reverse = True))
+
+
+# Hiher Order Function (HOF)
+def power(n):
+    def exp(x):
+        return x ** n
+    return exp
+
+do_Cube = power(3)
+print(do_Cube(2))
+
+do_Cube = power(4)
+print(do_Cube(2))
+
+
+def foo():
+    print("*" * 50) 
+    print("Adv python class")
+    print("*" * 50) 
+foo()
+# but what if i have to give this stars for every function that's where HOF is used so that print statement not needed to write again and again
+
+def intro():
+    print("Hi, i'm Abhi")
+
+def pretty(func):
+    def inner():
+        print("*" * 50)
+        func()
+        print("*" * 50)
+    return inner
+stars = pretty(intro)
+stars()
+
+#Decorators
+# there is too much of lines in above example decorators help in making it short
+def pretty(func):
+    def inner():
+        print("*" * 50)
+        func()
+        print("*" * 50)
+    return inner
+# @pretty is a decorators - @ with function name 
+@pretty
+def koo():
+    print("Leave in Khusrupur")
+koo()
